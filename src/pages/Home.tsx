@@ -13,11 +13,11 @@ const slideImages = [
     alt: 'Carpenter working with timber in workshop'
   },
   {
-    url: 'https://images.pexels.com/photos/8486944/pexels-photo-8486944.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    url: 'https://images.pexels.com/photos/5473298/pexels-photo-5473298.jpeg?auto=compress&cs=tinysrgb&w=1200',
     alt: 'Electrician working on electrical installation'
   },
   {
-    url: 'https://images.pexels.com/photos/6069112/pexels-photo-6069112.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    url: 'https://images.pexels.com/photos/3965545/pexels-photo-3965545.jpeg?auto=compress&cs=tinysrgb&w=1200',
     alt: 'Fashion designer stitching beautiful fabric'
   },
   {
@@ -49,13 +49,11 @@ export function Home() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-3">
-              <div className="relative">
-                <img 
-                  src="/src/assets/Logo.png" 
-                  alt="FundiConnect Logo" 
-                  className="w-12 h-12 object-contain hover:scale-105 transition-transform"
-                />
-              </div>
+              <img 
+                src="/Logo copy.png" 
+                alt="FundiConnect Logo" 
+                className="h-12 w-auto"
+              />
               <div>
                 <span className="text-xl font-bold text-gray-900">FundiConnect</span>
                 <div className="text-xs text-orange-600 font-medium">Skilled Hands Across Africa</div>
@@ -108,6 +106,7 @@ export function Home() {
                 src={image.url}
                 alt={image.alt}
                 className="w-full h-full object-cover"
+                loading={index === 0 ? 'eager' : 'lazy'}
               />
               <div className="absolute inset-0 bg-black bg-opacity-40"></div>
             </div>
@@ -364,9 +363,9 @@ export function Home() {
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src="/src/assets/Logo.png" 
+                  src="/Logo copy.png" 
                   alt="FundiConnect Logo" 
-                  className="w-10 h-10 object-contain"
+                  className="h-10 w-auto"
                 />
                 <span className="text-2xl font-bold">FundiConnect</span>
               </div>

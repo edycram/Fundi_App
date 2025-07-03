@@ -21,13 +21,11 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <div className="relative">
-              <img 
-                src="/src/assets/Logo.png" 
-                alt="FundiConnect Logo" 
-                className="w-10 h-10 object-contain"
-              />
-            </div>
+            <img 
+              src="/Logo copy.png" 
+              alt="FundiConnect Logo" 
+              className="h-10 w-auto"
+            />
             <div>
               <span className="text-xl font-bold text-gray-900">FundiConnect</span>
               <div className="text-xs text-orange-600 font-medium hidden sm:block">Skilled Hands Across Africa</div>
